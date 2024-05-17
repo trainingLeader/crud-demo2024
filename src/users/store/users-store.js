@@ -8,10 +8,12 @@ const state = {
 
 const loadNextPage = async() => {
     const users = await loadUsersByPage( state.currentPage + 1 );
+    console.log(users.length);
     if ( users.length === 0 ) return;
 
-    state.currentPage += 1;
     state.users = users;
+    state.currentPage += 1;
+    
 
 
 

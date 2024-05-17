@@ -1,4 +1,5 @@
 import usersStore from '../../store/users-store';
+import { deleteUserById } from '../../use-cases/delete-user-by-id';
 import { showModal } from '../render-modal/render-modal';
 import './render-table.css';
 
